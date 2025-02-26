@@ -1,0 +1,243 @@
+%-------------------------
+% Resume in Latex
+% Author : Diego Aulet-Leon
+%------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Random Stuff %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingContinue}[2]{
+  \vspace{-3pt}
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Heading  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \begin{center}
+        % NAME
+        {\Huge\scshape DIEGO AULET-LEON} 
+        % SUBHEADING
+        \\ Engineering leader bridging software, hardware, and automation to solve complex challenges.\\
+        \small
+        % LINKEDIN
+        \href{https://linkedin.com/in/diego-aulet-leon-8b172a13}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/diego-aulet-leon}}  ~
+        % GITHUB
+        \href{https://github.com/dauletle}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/dauletle}}
+        % PORTFOLIO
+        \href{https://diegoauletleon.wordpress.com}{\raisebox{-0.2\height}\faHome\ \underline{dauletleon.wordpress.com}}
+    \end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Education  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    % MAIN INFORMATION
+    \resumeSubheading
+    {California State University, Long Beach}{Long Beach, CA}
+    {Master of Science in Computer Engineering}{Graduated Dec. 2020}
+        % BULLET POINTS
+        \resumeItemListStart
+            \resumeItem{\textbf{Selected Coursework:} Topic Distributed Computing, Machine Learning, Artificial Intelligence, Hardware Software Codesign, Advanced Software Engineering, Advanced Computer Architecture, Mobile Application Development (Android)}
+            \resumeItem{\textbf{Awards:} Entered Tau Beta Pi Theta Chapter and IEEE-HKN (Eta Kappa Nu) Chapter}
+        \resumeItemListEnd
+        
+    \resumeSubheading
+    {University of California, Santa Cruz}{Santa Cruz, CA}
+    {Bachelor of Science in Computer Engineering, Minor in Electrical Engineering}{Graduated June 2012}
+        % BULLET POINTS
+        \resumeItemListStart
+            \resumeItem{\textbf{Selected Coursework:} Analog Electronics, Mechatronics, Embedded Systems, RF Hardware Design, Feedback Control Systems, Logic Design, Sensors and Sensing Technology, Digital Design with Verilog , Power Conservation and Control}
+            \resumeItem{\textbf{Awards:} Elected as Chair of the UCSC IEEE Student Branch}
+        \resumeItemListEnd
+        
+  \resumeSubHeadingListEnd
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+    \resumeSubHeadingListStart
+    
+        % COMPANY 1
+        \resumeSubheading
+        {Moog Inc.}{Torrance, CA}
+            % POSITION 1
+            {Software Engineer, Test Equipment \& Control Accounts Manager}{Aug. 2021 -- Present}
+            \resumeItemListStart
+                \resumeItem{Develop software for automated test stands to test flight-critical actuation systems using Python, NI LabView, DSpace ControlDesk, and Linux driver development in C.}
+                \resumeItem{Lead project planning, execution, and risk management while overseeing small teams on software development tasks such as low-level design, coding, and testing.}
+                \resumeItem{Manage project costs through earned value reporting, track scope changes, and ensure timely software delivery by coordinating critical dependencies in the project's Master Schedule.}
+            \resumeItemListEnd
+
+        % COMPANY 2
+        \resumeSubheading
+        {Tritium Technologies}{Torrance, CA}
+            % POSITION 1
+            {Support Engineering Manager}{July 2020 -- July 2021}
+            \resumeItemListStart
+                \resumeItem{Built and led a customer support team providing engineering support for EV chargers across the Americas.}
+                \resumeItem{Analyzed data to drive product improvements, implemented change management initiatives, and optimized business processes.}
+                \resumeItem{Ensured service and commissioning timelines met customer and contractual requirements, coordinating field and remote support operations.}
+            \resumeItemListEnd
+            
+            % POSITION 2
+            \resumeSubheadingContinue
+            {Lead Support Engineer}{Nov. 2017 -- July 2020}
+            \resumeItemListStart
+                \resumeItem{Provided engineering support for EV DC Fast Chargers, leveraging expertise in power electronics, networking, Debian Linux, Python, MQTT, C++, and CAN Bus.}
+                \resumeItem{Diagnosed and resolved charger issues by collaborating with support teams, test engineers, electricians, and software developers.}
+                \resumeItem{Developed troubleshooting tools and provided technical training to enhance service efficiency.}
+            \resumeItemListEnd
+
+        % COMPANY 3
+        \resumeSubheading
+        {Bonneville Power Administration}{Vancouver, WA}
+            % POSITION 1
+            {Electrical Engineer}{Jan. 2015 -- Nov. 2017}
+            \resumeItemListStart
+                \resumeItem{Provided on-site project management and testing for high-voltage transmission facilities across the Northwest.}
+                \resumeItem{Designed and implemented electrical schematic revisions to optimize transmission system operations.}
+                \resumeItem{Developed Python and C software tools to streamline field testing and improve efficiency.}
+            \resumeItemListEnd
+        
+        % COMPANY 4
+        \resumeSubheading
+        {Clover Technologies Group}{Van Nuys, CA}
+            % POSITION 1
+            {Hardware Engineer}{Feb. 2013 -- Dec. 2014}
+            \resumeItemListStart
+                \resumeItem{Designed and developed digital circuits and serial memory device protocols for aftermarket laser toner and inkjet cartridges.}
+                \resumeItem{Conducted system-level reverse engineering and implemented schematic capture for circuit design.}
+                \resumeItem{Assisted in firmware development and hardware validation to enhance product performance on ARM and 32-bit microcontrollers in Embedded C.}
+            \resumeItemListEnd
+            
+    \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PROJECTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects} 
+    \resumeSubHeadingListStart
+
+        % Project 1
+        \resumeProjectHeading
+        {\textbf{Actuation Controller Test Executive} $|$ \emph{Python, National Instruments DAQ, HIL Testing}}
+        % Date
+        {Aug. 2021 -- Present}
+        \resumeItemListStart
+            \resumeItem{Developed a test application using wxPython in Python to enable multiple instruments to interact with an actuator control unit (ACU).}
+            \resumeItem{Implemented automation for various test types using oscilloscopes, multimeters, and National Instruments DAQ tools.}
+            \resumeItem{Designed the software to support serial communication with the ACU and be configurable for multiple users.}
+        \resumeItemListEnd
+    
+        % Project 2
+        \resumeProjectHeading
+        {\textbf{OffsetLX Calibration Tool} $|$ \emph{Python, Qt, SEL-2411, Serial Communication, TCP/IP, Git}}
+        % Date
+        {May 2016 -- Nov. 2017}
+        \resumeItemListStart
+        \resumeItem{Designed a Python application using the Qt library to calibrate SEL-2411 devices for accurate zero values.}
+        \resumeItem{Implemented serial and TCP/IP communication to interact with the SEL-2411 and process input data.}
+        \resumeItem{Provided a user-friendly interface for testing engineers to perform calibration efficiently.}
+        \resumeItemListEnd
+        
+        % Project 3
+        \resumeProjectHeading
+        {\textbf{IS5000 EEPROM Chip Emulator} $|$ \emph{SPI, 32-bit Microcontroller, Embedded C, PCB Design}}
+        % Date
+        {Feb. 2013 -- Dec. 2014}
+        \resumeItemListStart
+        \resumeItem{Designed a custom circuit using Eagle and a Texas Instruments MSP430 microcontroller to emulate an SPI memory device.}
+        \resumeItem{Programmed the MSP430 in C to replicate EEPROM functionality for the IS5000 postal printer.}
+        \resumeItem{Developed and tested the emulator to ensure seamless integration with existing hardware.}
+        \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Technical Skills  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-----------PROGRAMMING SKILLS-----------
+\section{Specialized Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, C, Java, C\#, C++, MySQL, Swift, JavaScript, HTML/CSS} \\
+     \textbf{Frameworks}{: React, Flask, WordPress, FastAPI, Qt} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse, LabView, Git, Android Studio, XCode, Xilinx ISE} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, Scikit, Pytorch, TensorFlow, OpenCV, wxPython} \\
+     \textbf{Management Tools}{: Microsoft Project, Microsoft Visio, Google Analytics, Tableau, JIRA/Confluence, Balsamiq Wireframes, Miro, Agile/Scrum, InVision, Microsoft Power Bi} \\
+     \textbf{Communication Protocols}{: TCP/IP, PLC, Wi-Fi, Bluetooth, USART, 1-wire, USB, SPI, CAN, I\textsuperscript{2}C, OCPP} \\
+     \textbf{Hardware}{: AMD (Xilinx) Zybo FPGA, ARM/16-bit/8-bit CPU Architectures, Atmel, Texas Instruments, PIC (Microchip), Freescale}
+    }}
+ \end{itemize}
+
+ \section{Certifications \& Affiliated Professional Organizations}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Engineer-in-Training (EIT)}{ California BPELSG} \\
+     \textbf{Product Management Bootcamp Certificate}{ UCLA Extension} \\
+    }}
+ \end{itemize}
+ 
+\end{document}
